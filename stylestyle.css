@@ -1,0 +1,285 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.Deivisson-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30PX;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+
+button:hover, form .btn-enviar input{
+    box-shadow: 0px 0px 8px #009405b6;
+    transform: scale(1.10);
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    color: #464545;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+
+}
+
+
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+    
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+   
+}
+
+.topo-do-site .texto-topo-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .texto-topo-site p{
+    color: #fff;
+    line-height: 20px;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site .img-topo-site img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+.especialidades{
+    padding: 50px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #ffffff;
+    padding: 40px;
+    margin-left: 55px;
+    margin-right: 45px;
+   margin-top: 45px;
+   border-radius: 30px;
+
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 8px #fff;
+}
+
+
+.especialidades .especialidades-box h3{
+font-size: 28px;
+margin: 10px 0;
+
+}
+
+/* Estilo sobre */
+.sobre{
+    padding: 60px 4%;
+}
+
+.imagem-sobre img{
+    width: 400px;
+}
+.texto-sobre {
+    font-size: 24px;
+    color: #fff;
+}
+
+.flex{
+    align-items: center;
+    gap: 50px;
+}
+.texto-sobre h2{
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.texto-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+.texto-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.btn-social button{
+    width:  30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* ESTILO DO FORMULARIO */
+.formulario{
+    padding: 120px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+form input , form textarea{
+    width: 100%;
+    background-color: #3130308e;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+form .textarea{
+    resize: none;
+    max-height: 170px;
+}
+form .btn-enviar{
+    margin-top: 25px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00ff08;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPE */
+
+footer .flex{
+    justify-content: space-between;
+
+}
+
+footer{ 
+    padding: 40PX 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .Line-footer{
+    padding: 20px 0;
+}
+.borda{
+    padding: 20px;
+    border-top: 2px solid #00ff08;
+}
+
+footer .Line-footer p{
+    color: #00ff15;
+   
+}
